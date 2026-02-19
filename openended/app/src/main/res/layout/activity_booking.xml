@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient Registration"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Patient Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="phone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Department"
+        android:layout_marginTop="15dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgDept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/rbCardio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cardiology" android:checked="true"/>
+        <RadioButton android:id="@+id/rbOrtho" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Orthopedics" />
+        <RadioButton android:id="@+id/rbDental" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dental" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date (DD/MM/YYYY)"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Booking"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>
